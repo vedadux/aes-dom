@@ -52,7 +52,7 @@ entity aes_top is
     PERFECTLY_INTERLEAVED : string  := "yes";  -- yes -> faster, no -> smaller
     -- Donot use eight-staged Sbox with Perfectly Interleaved variant!
     EIGHT_STAGED_SBOX     : string  := "no";  -- yes -> smaller, less randomness
-    N                     : integer := 2       -- Protection order >= 0
+    N                     : integer := 1       -- Protection order >= 0
     );
   port (
     ClkxCI   : in std_logic;
